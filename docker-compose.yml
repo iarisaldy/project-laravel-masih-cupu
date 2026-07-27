@@ -10,7 +10,9 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+      - /app/vendor
     environment:
       - APP_ENV=local
       - APP_DEBUG=true
+      - APP_KEY=base64:Yc02i1wNMQlDqiNAs+j6ZBU+4D6IMoof4G3aILYCd6s=
       - APP_URL=http://localhost:8000
